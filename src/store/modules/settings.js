@@ -1,3 +1,7 @@
+/*
+ * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+ */
+
 import defaultSettings from '@/settings'
 
 const { showSettings, fixedHeader, sidebarLogo } = defaultSettings

@@ -1,3 +1,7 @@
+/*
+ * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+ */
+
 // https://github.com/michael-ciniawsky/postcss-load-config
 
 module.exports = {

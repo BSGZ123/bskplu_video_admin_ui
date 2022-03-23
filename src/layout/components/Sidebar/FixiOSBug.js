@@ -1,3 +1,7 @@
+/*
+ * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+ */
+
 export default {
   computed: {
     device() {

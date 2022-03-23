@@ -1,9 +1,14 @@
+<!--
+  - Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+  -->
+
 <template>
   <div class="login-container">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" auto-complete="on" label-position="left">
 
       <div class="title-container">
-        <h3 class="title">Login Form</h3>
+        <img class="login_img" src="@/assets/logo.png" alt="">
+        <span class="title">杨不易课堂后台管理系统</span>
       </div>
 
       <el-form-item prop="username">
@@ -59,11 +64,14 @@ export default {
   name: 'Login',
   data() {
     const validateUsername = (rule, value, callback) => {
-      if (!validUsername(value)) {
-        callback(new Error('Please enter the correct user name'))
-      } else {
-        callback()
-      }
+      /*
+            if (!validUsername(value)) {
+              callback(new Error('Please enter the correct user name'))
+            } else {
+              callback()
+            }
+      */
+      callback()
     }
     const validatePassword = (rule, value, callback) => {
       if (value.length < 6) {
@@ -216,12 +224,23 @@ $light_gray:#eee;
     position: relative;
 
     .title {
-      font-size: 26px;
+      font-size: 34px;
       color: $light_gray;
       margin: 0px auto 40px auto;
       text-align: center;
+      display: inline-block;
       font-weight: bold;
+      padding-top: 10px;
     }
+
+    .login_img {
+      width: 60px;
+      height: 60px;
+      margin-right: 10px;
+      vertical-align: top;
+      border-radius: 5px;
+    }
+
   }
 
   .show-pwd {

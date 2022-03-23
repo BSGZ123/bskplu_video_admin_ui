@@ -1,3 +1,7 @@
+<!--
+  - Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+  -->
+
 <template>
   <div :class="classObj" class="app-wrapper">
     <div v-if="device==='mobile'&&sidebar.opened" class="drawer-bg" @click="handleClickOutside" />

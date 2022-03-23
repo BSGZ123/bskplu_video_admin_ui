@@ -1,3 +1,7 @@
+/*------------------------------------------------------------------------------
+ -  Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+ -----------------------------------------------------------------------------*/
+
 import { validUsername, isExternal } from '@/utils/validate.js'
 
 describe('Utils:validate', () => {

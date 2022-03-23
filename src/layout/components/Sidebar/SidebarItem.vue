@@ -1,3 +1,7 @@
+<!--
+  - Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+  -->
+
 <template>
   <div v-if="!item.hidden">
     <template v-if="hasOneShowingChild(item.children,item) && (!onlyOneChild.children||onlyOneChild.noShowingChildren)&&!item.alwaysShow">

@@ -1,6 +1,10 @@
+/*
+ * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+ */
+
 module.exports = {
 
-  title: 'Vue Admin Template',
+  title: '视频点播平台',
 
   /**
    * @type {boolean} true | false

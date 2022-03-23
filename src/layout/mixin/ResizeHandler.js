@@ -1,3 +1,7 @@
+/*
+ * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+ */
+
 import store from '@/store'
 
 const { body } = document

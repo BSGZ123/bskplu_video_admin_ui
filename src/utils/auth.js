@@ -1,6 +1,10 @@
+/*
+ * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+ */
+
 import Cookies from 'js-cookie'
 
-const TokenKey = 'vue_admin_template_token'
+const TokenKey = 'token'
 
 export function getToken() {
   return Cookies.get(TokenKey)

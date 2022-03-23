@@ -1,3 +1,7 @@
+<!--
+  - Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+  -->
+
 <template>
   <div class="wscn-http404-container">
     <div class="wscn-http404">

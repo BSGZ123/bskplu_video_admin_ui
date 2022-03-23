@@ -1,3 +1,7 @@
+/*
+ * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+ */
+
 import Vue from 'vue'
 import Vuex from 'vuex'
 import getters from './getters'

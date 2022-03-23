@@ -1,3 +1,7 @@
+<!--
+  - Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+  -->
+
 <template>
   <div class="dashboard-container">
     <div class="dashboard-text">name: {{ name }}</div>

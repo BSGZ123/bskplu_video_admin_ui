@@ -1,3 +1,7 @@
+/*------------------------------------------------------------------------------
+ -  Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+ -----------------------------------------------------------------------------*/
+
 import { shallowMount } from '@vue/test-utils'
 import SvgIcon from '@/components/SvgIcon/index.vue'
 describe('SvgIcon.vue', () => {

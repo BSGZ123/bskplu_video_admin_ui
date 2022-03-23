@@ -1,6 +1,10 @@
+<!--
+  - Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+  -->
+
 <template>
   <div :class="{'has-logo':showLogo}">
-    <logo v-if="showLogo" :collapse="isCollapse" />
+    <logo v-if="showLogo" :collapse="isCollapse"/>
     <el-scrollbar wrap-class="scrollbar-wrapper">
       <el-menu
         :default-active="activeMenu"
@@ -12,7 +16,7 @@
         :collapse-transition="false"
         mode="vertical"
       >
-        <sidebar-item v-for="route in routes" :key="route.path" :item="route" :base-path="route.path" />
+        <sidebar-item v-for="route in routes" :key="route.path" :item="route" :base-path="route.path"/>
       </el-menu>
     </el-scrollbar>
   </div>
@@ -31,7 +35,8 @@ export default {
       'sidebar'
     ]),
     routes() {
-      return this.$router.options.routes
+      // return this.$router.options.routes
+      return this.$router.options.routes.concat(global.antRouter)
     },
     activeMenu() {
       const route = this.$route

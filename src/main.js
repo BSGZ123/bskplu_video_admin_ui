@@ -1,37 +1,66 @@
+/*
+ * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+ */
+
 import Vue from 'vue'
 
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import locale from 'element-ui/lib/locale/lang/en' // lang i18n
 
 import '@/styles/index.scss' // global css
-
+import '@/styles/yangbuyi.scss' // ruoyi css
 import App from './App'
 import store from './store'
 import router from './router'
+import permission from './directive/permission' // 权限校验
 
 import '@/icons' // icon
 import '@/permission' // permission control
+import {
+  parseTime,
+  resetForm,
+  addDateRange,
+  selectDictLabel,
+  selectDictLabels,
+  download,
+  handleTree,
+  toMsg
+} from '@/utils/yangbuyi'
+import Pagination from '@/components/Pagination'
+import vcolorpicker from 'vcolorpicker'
 
-/**
- * If you don't want to use mock-server
- * you want to use MockJs for mock api
- * you can execute: mockXHR()
- *
- * Currently MockJs will be used in the production environment,
- * please remove it before going online ! ! !
- */
-if (process.env.NODE_ENV === 'production') {
-  const { mockXHR } = require('../mock')
-  mockXHR()
+Vue.prototype.toMsg = toMsg
+Vue.prototype.parseTime = parseTime
+Vue.prototype.resetForm = resetForm
+Vue.prototype.addDateRange = addDateRange
+Vue.prototype.selectDictLabel = selectDictLabel
+Vue.prototype.selectDictLabels = selectDictLabels
+Vue.prototype.download = download
+Vue.prototype.handleTree = handleTree
+
+Vue.prototype.msgSuccess = function(msg) {
+  this.$message({ showClose: true, message: msg, type: 'success' })
 }
 
-// set ElementUI lang to EN
-Vue.use(ElementUI, { locale })
-// 如果想要中文版 element-ui，按如下方式声明
-// Vue.use(ElementUI)
+Vue.prototype.msgError = function(msg) {
+  this.$message({ showClose: true, message: msg, type: 'error' })
+}
+
+Vue.prototype.msgInfo = function(msg) {
+  this.$message.info(msg)
+}
+
+// 全局组件挂载
+Vue.component('Pagination', Pagination)
+
+// 挂在全局按钮权限校验
+Vue.use(permission)
+
+Vue.use(ElementUI)
+// 颜色选择器
+Vue.use(vcolorpicker)
 
 Vue.config.productionTip = false
 

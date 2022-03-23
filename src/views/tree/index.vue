@@ -1,3 +1,7 @@
+<!--
+  - Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+  -->
+
 <template>
   <div class="app-container">
     <el-input v-model="filterText" placeholder="Filter keyword" style="margin-bottom:30px;" />

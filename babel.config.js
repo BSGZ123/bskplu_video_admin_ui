@@ -1,3 +1,7 @@
+/*
+ * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+ */
+
 module.exports = {
   presets: [
     // https://github.com/vuejs/vue-cli/tree/master/packages/@vue/babel-preset-app
