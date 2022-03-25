@@ -1,6 +1,4 @@
-/*
- * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
- */
+
 
 import axios from 'axios'
 import { Notification, MessageBox, Message } from 'element-ui'

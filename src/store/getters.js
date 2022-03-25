@@ -1,6 +1,4 @@
-/*
- * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
- */
+
 
 const getters = {
   sidebar: state => state.app.sidebar,

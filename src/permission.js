@@ -1,6 +1,4 @@
-/*
- * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
- */
+
 
 import router from './router'
 import store from './store'

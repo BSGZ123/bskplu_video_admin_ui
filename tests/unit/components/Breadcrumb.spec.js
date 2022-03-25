@@ -1,6 +1,3 @@
-/*------------------------------------------------------------------------------
- -  Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
- -----------------------------------------------------------------------------*/
 
 import { mount, createLocalVue } from '@vue/test-utils'
 import VueRouter from 'vue-router'

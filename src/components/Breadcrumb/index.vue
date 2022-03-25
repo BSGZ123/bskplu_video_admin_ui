@@ -1,6 +1,3 @@
-<!--
-  - Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
-  -->
 
 <template>
   <el-breadcrumb class="app-breadcrumb" separator="/">

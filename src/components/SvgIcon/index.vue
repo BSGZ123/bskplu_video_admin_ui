@@ -1,6 +1,4 @@
-<!--
-  - Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
-  -->
+
 
 <template>
   <div v-if="isExternal" :style="styleExternalIcon" class="svg-external-icon svg-icon" v-on="$listeners" />

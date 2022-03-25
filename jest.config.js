@@ -1,6 +1,4 @@
-/*
- * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
- */
+
 
 module.exports = {
   moduleFileExtensions: ['js', 'jsx', 'json', 'vue'],

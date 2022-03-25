@@ -1,6 +1,4 @@
-/*
- * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
- */
+
 
 import { login, logout, getInfo, getMoveRouter } from '@/api/user'
 import { getToken, setToken, removeToken } from '@/utils/auth'
