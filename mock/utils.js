@@ -1,3 +1,6 @@
+/*
+ * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+ */
 
 /**
  * @param {string} url

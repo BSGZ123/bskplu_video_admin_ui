@@ -6,7 +6,7 @@
 
       <div class="title-container">
         <img class="login_img" src="@/assets/logo.png" alt="">
-        <span class="title">杨不易课堂后台管理系统</span>
+        <span class="title">视频点播后台管理系统</span>
       </div>
 
       <el-form-item prop="username">

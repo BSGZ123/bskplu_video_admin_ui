@@ -1,3 +1,6 @@
+/*
+ * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+ */
 
 const Mock = require('mockjs')
 const { param2Obj } = require('./utils')
